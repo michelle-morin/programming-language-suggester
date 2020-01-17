@@ -1,5 +1,6 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #F2F0E6;
 }
 
 .jumbotron {
@@ -7,13 +8,13 @@ body {
   background-image: url(../img/square.jpg);
   background-size: cover;
   background-position: center;
-  color: #323335;
+  color: #264124;
   text-align: center;
-  border: 2px solid #525457;
+  border: 3px solid #525457;
 }
 
 .jumbotron h2 {
-  color: #172230;
+  color: #11294b;
   font-weight: bold;
   margin: 0px 20px;
 }
@@ -52,7 +53,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   color: #323335;
-  border: 2px solid #525457;
+  border: 3px solid #525457;
 }
 
 form h3, #output h3 {
@@ -77,6 +78,7 @@ form h3, #output h3 {
 a {
   color: #172230;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 a:hover {

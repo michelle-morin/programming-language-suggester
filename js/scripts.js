@@ -54,7 +54,7 @@ $(document).ready(function() {
       userMotivation = "are planning to launch a new career that involves coding";
       $(".career").show();
     } else if (motivation === 2) {
-      userMotivation = "are curious about whether you will enjoy coding";
+      userMotivation = "are curious as to whether you will enjoy coding";
       $(".enjoy").show();
     } else if (motivation === 3) {
       userMotivation = "would like to code as a hobby";
