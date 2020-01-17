@@ -4,6 +4,15 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    $(".career").hide();
+    $(".enjoy").hide();
+    $(".hobby").hide();
+    $(".experienced").hide();
+    $(".javascript").hide();
+    $(".python").hide();
+    $(".c-plus-plus").hide();
+    $(".sql").hide();
+    $(".c-sharp").hide();
 
     var name = $("input#name").val();
     var interest = $("input:radio[name=interest]:checked").val();
@@ -50,7 +59,7 @@ $(document).ready(function() {
       userMotivation = "would like to code as a hobby";
       $(".hobby").show();
     } else if (motivation === 4) {
-      userMotivation = "are a programmer seeking to add additional skills to your toolkit";
+      userMotivation = "are a programmer seeking to add another programming language to your toolkit";
       $(".experienced").show();
     }
 
