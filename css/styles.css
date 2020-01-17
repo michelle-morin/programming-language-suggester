@@ -10,7 +10,7 @@ body {
   color: white;
   text-align: center;
   border: 2px solid;
-  border-image-source: linear-gradient(45deg, #f3526d, #75f84d);
+  border-image-source: linear-gradient(45deg, #f3526d, #1ef00b);
   border-image-slice: 1;
 }
 
@@ -20,6 +20,8 @@ body {
 
 #output {
   display: none;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 button.btn-default {
@@ -27,6 +29,8 @@ button.btn-default {
   font-weight: bolder;
   margin: 24px 0px;
   font-size: 20px;
+  background-color: #f3526d;
+  border: 2px solid white;
 }
 
 h3 {
@@ -34,24 +38,40 @@ h3 {
 }
 
 .well {
+  width: 100%;
   margin-bottom: 20px;
   padding: 10px 50px;
   background-color: black;
   color: white;
-  border: 2px solid #1ef00b;
+  border: 2px solid;
+  border-image: conic-gradient(#1ef00b, #f1ef55, #f3526d, #2c51f8) 1;
 }
 
-form h3 {
+form h3, #output h3 {
   color: #f3526d;
 }
 
 button.btn-default:hover {
-  background-color: #f3526d;
+  background-color: #1ef00b;
   color: black;
+  border: 2px solid white;
 }
 
 .form-control {
   background-color: black;
   color: white;
   border: 2px dotted #1ef00b;
+  font-size: medium;
+}
+
+.radio {
+  font-size: medium;
+}
+
+a {
+  color: #1ef00b;
+}
+
+a:hover {
+  color: #f3526d;
 }
