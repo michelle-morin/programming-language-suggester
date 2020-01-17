@@ -4,11 +4,7 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $(".career").hide();
-    $(".enjoy").hide();
-    $(".hobby").hide();
-    $(".experienced").hide();
-    
+
     var name = $("input#name").val();
     var interest = $("input:radio[name=interest]:checked").val();
     var motivation = parseInt($("#motivation").val());
@@ -24,23 +20,28 @@ $(document).ready(function() {
       if (interest === "UX") {
         recommendation = "JavaScript";
         userInterest = "user experience (UX) design";
+        $(".javascript").show();
       } else if (interest === "database") {
         recommendation = "Python";
         userInterest = "database administration";
+        $(".python").show();
       } else if (interest === "systems") {
         recommendation = "C++";
         userInterest = "computer systems";
+        $(".c-plus-plus").show();
       } else if (interest === "BI") {
-        recommendation = "SQL (while not a development language, learning SQL may be helpful for the types of data analysis commonly used for busisness intelligence)";
+        recommendation = "SQL. While not a development language, learning SQL may help streamline data analysis commonly used for busisness intelligence";
         userInterest = "business intelligence analytics";
+        $(".sql").show();
       } else if (interest === "programmer") {
         recommendation = "C#";
         userInterest = "software development";
+        $(".c-sharp").show();
       }
 
     var userMotivation;
     if (motivation === 1) {
-      userMotivation = "are planning to launch a career that involves coding";
+      userMotivation = "are planning to launch a new career that involves coding";
       $(".career").show();
     } else if (motivation === 2) {
       userMotivation = "are curious about whether you will enjoy coding";
@@ -53,6 +54,7 @@ $(document).ready(function() {
       $(".experienced").show();
     }
 
+    $("#output").show();
     $(".language").text(recommendation);
     $(".interest").text(userInterest);
     $(".motivation").text(userMotivation);
