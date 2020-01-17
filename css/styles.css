@@ -1,21 +1,21 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: url(../img/matrix.jpg);
-  background-size: cover;  
 }
 
 .jumbotron {
   margin-top: 30px;
-  background-color: black;
-  color: white;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;  
+  color: #323335;
   text-align: center;
-  border: 2px solid;
-  border-image-source: linear-gradient(45deg, #f3526d, #1ef00b);
-  border-image-slice: 1;
+  border: 2px solid #525457;
 }
 
 .jumbotron h2 {
-  color: #1ef00b;
+  color: #172230;
+  font-weight: bold;
+  margin: 0px 20px;
 }
 
 #output {
@@ -27,40 +27,46 @@ body {
 button.btn-default {
   width: 100%;
   font-weight: bolder;
-  margin: 24px 0px;
   font-size: 20px;
-  background-color: #f3526d;
-  border: 2px solid white;
+  margin: 24px 0px;
+  background-color: #172230;
+  color: white;
+}
+
+button.btn-default:hover {
+  background-color: white;
+  color: #172230;
+  border: 2px solid #172230;
 }
 
 h3 {
   margin-top: 24px;
+  font-weight: bold;
 }
 
 .well {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px 50px;
-  background-color: black;
-  color: white;
-  border: 2px solid;
-  border-image: conic-gradient(#1ef00b, #f1ef55, #f3526d, #2c51f8) 1;
+  background-image: url(../img/abstract.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #323335;
+  border: 2px solid #525457;
 }
 
 form h3, #output h3 {
-  color: #f3526d;
+  color: #172230;
+  font-weight: bold;
 }
 
-button.btn-default:hover {
-  background-color: #1ef00b;
-  color: black;
-  border: 2px solid white;
+#output p {
+  font-size: medium;
 }
 
 .form-control {
-  background-color: black;
-  color: white;
-  border: 2px dotted #1ef00b;
+  color: #172230;
+  border: 1px solid #172230;
   font-size: medium;
 }
 
@@ -69,9 +75,10 @@ button.btn-default:hover {
 }
 
 a {
-  color: #1ef00b;
+  color: #172230;
+  font-weight: bold;
 }
 
 a:hover {
-  color: #f3526d;
+  color: #264124;
 }
