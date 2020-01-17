@@ -1,0 +1,26 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron h2 {
+  font-size: 18px;
+}
+
+#output {
+  display: none;
+}
+
+button.btn-default {
+  width: 100%;
+  font-weight: bolder;
+  margin: 24px 0px;
+}
+
+h3 {
+  margin-top: 24px;
+}
+
+.well {
+  margin-bottom: 20px;
+  padding: 10px 50px;
+}
