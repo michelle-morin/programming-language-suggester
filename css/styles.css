@@ -9,11 +9,12 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  border: 2px solid #f3526d;
+  border: 2px solid;
+  border-image-source: linear-gradient(45deg, #f3526d, #75f84d);
+  border-image-slice: 1;
 }
 
 .jumbotron h2 {
-  font-size: 18px;
   color: #1ef00b;
 }
 
@@ -42,4 +43,15 @@ h3 {
 
 form h3 {
   color: #f3526d;
+}
+
+button.btn-default:hover {
+  background-color: #f3526d;
+  color: black;
+}
+
+.form-control {
+  background-color: black;
+  color: white;
+  border: 2px dotted #1ef00b;
 }
