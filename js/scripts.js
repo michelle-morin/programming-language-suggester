@@ -17,6 +17,7 @@ $(document).ready(function() {
     var name = $("input#name").val();
     var interest = $("input:radio[name=interest]:checked").val();
     var motivation = parseInt($("#motivation").val());
+    var food = $("#food").val();
 
     if (name) {
       $(".name").text(name);
@@ -61,6 +62,12 @@ $(document).ready(function() {
     } else if (motivation === 4) {
       userMotivation = "are a programmer seeking to add another programming language to your toolkit";
       $(".experienced").show();
+    }
+
+    if (food === "Lasagna" || food === "Jambalaya" || food === "Pad thai" || food === "Pizza") {
+      $(".food").text(food + " is");
+    } else if (food === "Nachos" || food === "Chocolate chip cookies") {
+      $(".food").text(food + " are");
     }
 
     $("#output").show();
