@@ -4,6 +4,11 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    $(".career").hide();
+    $(".enjoy").hide();
+    $(".hobby").hide();
+    $(".experienced").hide();
+    
     var name = $("input#name").val();
     var interest = $("input:radio[name=interest]:checked").val();
     var motivation = parseInt($("#motivation").val());
@@ -35,16 +40,17 @@ $(document).ready(function() {
 
     var userMotivation;
     if (motivation === 1) {
-      userMotivation = "";
-
+      userMotivation = "are planning to launch a career that involves coding";
+      $(".career").show();
     } else if (motivation === 2) {
-      userMotivation = "";
-
+      userMotivation = "are curious about whether you will enjoy coding";
+      $(".enjoy").show();
     } else if (motivation === 3) {
-      userMotivation = "";
-
+      userMotivation = "would like to code as a hobby";
+      $(".hobby").show();
     } else if (motivation === 4) {
-      userMotivation = "";
+      userMotivation = "are a programmer seeking to add additional skills to your toolkit";
+      $(".experienced").show();
     }
 
     $(".language").text(recommendation);
