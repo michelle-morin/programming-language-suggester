@@ -57,24 +57,32 @@ h3 {
 }
 
 #output .well {
-  background-image: url(../img/square.jpg);
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  background-image: url(../img/designrotate.jpg);
   background-size: cover;
   background-position: center;
-  color: #11294b;
+  background-repeat: no-repeat;
+  color: #323335;
+  border: 3px solid #525457;
 }
 
-form h3, #output h3 {
+form h3, #output h2 {
   color: #172230;
   font-weight: bold;
 }
 
-#output h3 {
+#output h2 {
   text-align: center;
 }
 
 #output p {
-  margin-top: 20px;
   font-size: medium;
+}
+
+#output p.last-item {
+  margin-bottom: 130px;
 }
 
 .form-control {
