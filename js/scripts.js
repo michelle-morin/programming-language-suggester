@@ -40,7 +40,7 @@ $(document).ready(function() {
         userInterest = "computer systems";
         $(".c-plus-plus").show();
       } else if (interest === "BI") {
-        recommendation = "SQL. While not a development language, learning SQL may help streamline data analysis commonly used for busisness intelligence purposes";
+        recommendation = "SQL. While not a development language, learning SQL may help streamline data analysis commonly used for business intelligence purposes";
         userInterest = "business intelligence analytics";
         $(".sql").show();
       } else if (interest === "programmer") {
