@@ -6,7 +6,7 @@
 
 ## Description
 
-_This project is a webpage that suggests, based on user responses to survey questions, which programming language the user should learn. The webpage prompts a user to fill out a form, which includes three different form input types (a text input box, select boxes, and radio buttons). After the user answers a series of questions (some related to programming, some arbitrary) and submits the form via a button, the webpage displays a recommendation of a programming language for the user to learn. jQuery is used to obtain the user's name, technical interest, motivation for learning a programming language, and everyday food choice from four of the form inputs. Branching is used to:_
+_This project is a webpage that suggests which programming language a user should learn based on responses to survey questions. The webpage prompts a user to fill out a form, which includes three different form input types (a text input box, select boxes, and radio buttons). After the user answers a series of questions (some related to programming, some arbitrary) and submits the form via a button, the webpage displays a recommendation of a programming language for the user to learn. jQuery is used to obtain the user's name, technical interest, motivation for learning a programming language, and everyday food choice from four of the form inputs. Branching is used to:_
 * _output a different programming language recommendation for each technical interest option_
 * _output a different article for each motivation to learn a programming language_
 * _address the user by name or with "Hey there," and_
